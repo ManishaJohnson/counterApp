@@ -7,7 +7,7 @@
     ],
     "routes": [
       { "src": "/static/(.*)", "dest": "static/$1" },
-      { "src": "/(.*)", "dest": "vigilance/wsgi.py" }
+      { "src": "/(.*)", "dest": "counterApp/wsgi.py" }
     ],
     "env": {
       "VERCEL": "1",
