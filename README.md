@@ -1,2 +1,4 @@
 # counterApp
-App to increment and decrement a counter
+Action: App to increment and decrement a counter
+
+Aim: To learn to deploy django services over Vercel 'counterApp_mkj.vercel.app'

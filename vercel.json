@@ -1,0 +1,17 @@
+{
+    "builds": [
+      {
+        "src": "counterApp/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      { "src": "/static/(.*)", "dest": "static/$1" },
+      { "src": "/(.*)", "dest": "vigilance/wsgi.py" }
+    ],
+    "env": {
+      "VERCEL": "1",
+      "DJANGO_SETTINGS_MODULE": "counterApp.settings",
+      "DJANGO_READ_DOT_ENV_FILE": "true"
+    }
+  }
