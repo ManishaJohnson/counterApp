@@ -2,7 +2,7 @@
     "builds": [
       {
         "src": "counterApp/wsgi.py",
-        "use": "@ardnt/vercel-python-wsgi",
+        "use": "vercel/vercel-python-wsgi",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
       }
     ],
